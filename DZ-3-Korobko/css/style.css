@@ -1,0 +1,15 @@
+.page-content {
+	width: 600px;
+	margin: auto auto;
+	color: #333333;
+}
+
+.content-title {
+	text-align: center;
+}
+
+.content-body {
+	font-size: 14pt;
+	line-height: 1.5;
+	margin: auto 80px;
+}
