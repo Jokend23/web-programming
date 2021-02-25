@@ -13,3 +13,26 @@
 	line-height: 1.5;
 	margin: auto 80px;
 }
+
+.blue {
+	color: blue;
+}
+
+.red {
+	color: red;
+}
+
+.table-border {
+ border: 4px double black;
+ border-collapse: collapse;
+}
+
+.table-border th {
+ border: 4px double black;
+}
+
+.table-border td {
+ border: 4px double black;
+ padding: 5px;
+ word-wrap: break-word;
+}
