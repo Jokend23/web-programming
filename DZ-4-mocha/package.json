@@ -1,0 +1,14 @@
+{
+	"name": "GeometricShapeFormulaTests",
+	"version": "1.0.0",
+	"scripts": {
+		"test": "mocha *.test.js"
+	},
+	"devDependencies": {
+		"Math": "0.0.1-security",
+		"mocha": "^8.3.1"
+	},
+	"dependencies": {
+		"mathjs": "^9.2.0"
+	}
+}
