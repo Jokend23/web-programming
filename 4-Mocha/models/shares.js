@@ -1,48 +1,53 @@
 const Math = require('mathjs');
 
-
-module.exports.Circle = function (radius) {
+module.exports.Circle = class {
 	// Класс круга
 
-	this.radius = radius;
+	constructor(radius) {
+		this.radius = radius;
+	}
 
-	this.getSquare = function (r) {
-		return Math.round(Math.pi * Math.pow(r, 2));
-	};
+	getSquare() {
+		return Math.round(Math.pi * Math.pow(this.radius, 2)); 
+	}
 
-	this.getPerimeter = function (r) {
-		return Math.round(2 * Math.pi * r);
-	};
-};
+	getPerimeter() {
+		return Math.round(2 * Math.pi * this.radius);
+	} 
+}
 
-module.exports.Trapezoid =function (top, right, bottom, left) {
+module.exports.Trapezoid = class {
 	// Класс трапеции
 
-	this.top = top;
-	this.right = right;
-	this.bottom = bottom;
-	this.left = left;
+	constructor(top, right, bottom, left) {
+		this.top = top;
+		this.right = right;
+		this.bottom = bottom;
+		this.left = left;
+	}
 
-	this.getPerimeter = function (top, right, bottom, left) {
-		return top + right + bottom + left;
-	};
+	getPerimeter() {
+		return this.top + this.right + this.bottom + this.left;
+	}
 
-	this.getMiddleLine = function (top, bottom) {
-		return (top + bottom) / 2;
-	};
-};
+	getMiddleLine() {
+		return (this.top + this.bottom) / 2;
+	}
+}
 
-module.exports.Cylinder = function (radius, height) {
+module.exports.Cylinder = class {
 	// Класс цилиндра
 
-	this.radius = radius;
-	this.height = height;
+	constructor(radius, height) {
+		this.radius = radius;
+		this.height = height;
+	}
 
-	this.getLateralSurfaceArea = function (r, h) {
-		return Math.round(2 * Math.pi * r * h);
-	};
+	getLateralSurfaceArea() {
+		return Math.round(2 * Math.pi * this.radius * this.height);
+	}
 
-	this.getFullArea = function (r, h) {
-		return Math.round(2 * Math.pi * r * (h + r));
-	};
-};
+	getFullArea() {
+		return Math.round(2 * Math.pi * this.radius * (this.height + this.radius));
+	}
+}

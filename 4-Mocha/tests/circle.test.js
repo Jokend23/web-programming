@@ -6,7 +6,7 @@ module.exports.circleSquare = function (circleObj, exceptedResult) {
 	describe('Формулы круга', function () {
 		describe('Площадь', function () {
 			it(`Должно вернуть ${exceptedResult}, радиус = ${circleObj.radius}`, function () {
-				let result = circleObj.getSquare(circleObj.radius);
+				let result = circleObj.getSquare();
 
 				assert.equal(result, exceptedResult);
 			})
@@ -18,7 +18,7 @@ module.exports.circlePerimeter = function (circleObj, exceptedResult) {
 	describe('Формулы круга', function () {
 		describe('Периметр', function () {
 			it(`Должно вернуть ${exceptedResult}, радиус = ${circleObj.radius}`, function () {
-				let result = circleObj.getPerimeter(circleObj.radius);
+				let result = circleObj.getPerimeter();
 				
 				assert.equal(result, exceptedResult);
 			})

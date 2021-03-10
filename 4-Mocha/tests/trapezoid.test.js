@@ -9,7 +9,7 @@ module.exports.middleLine = function (trapezoidObj, exceptedResult) {
 	describe('Формулы цилиндра', function () {
 		describe('Площадь боковой поверности', function () {
 			it(`Должно вернуть ${exceptedResult}, top = ${top}, bottom = ${bottom}`, function () {
-				let result = trapezoidObj.getMiddleLine(top, bottom);
+				let result = trapezoidObj.getMiddleLine();
 
 				assert.equal(result, exceptedResult);
 			})
@@ -26,7 +26,7 @@ module.exports.perimeter = function (trapezoidObj, exceptedResult) {
 	describe('Формулы цилиндра', function () {
 		describe('Площадь боковой поверности', function () {
 			it(`Должно вернуть ${exceptedResult}, top = ${top}, right = ${right}, bottom = ${bottom}, left = ${left}`, function () {
-				let result = trapezoidObj.getPerimeter(top, right, bottom, left);
+				let result = trapezoidObj.getPerimeter();
 
 				assert.equal(result, exceptedResult);
 			})
