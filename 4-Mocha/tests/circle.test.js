@@ -1,11 +1,13 @@
 const assert = require('assert');
-const operations = require('../operations/circle_operations.js');
+// const operations = require('../operations/circle_operations.js');
+
 
 module.exports.circleSquare = function (circleObj, exceptedResult) {
 	describe('Формулы круга', function () {
 		describe('Площадь', function () {
 			it(`Должно вернуть ${exceptedResult}, радиус = ${circleObj.radius}`, function () {
-				let result = operations.getSquare(circleObj.radius);
+				let result = circleObj.getSquare(circleObj.radius);
+
 				assert.equal(result, exceptedResult);
 			})
 		});
@@ -16,7 +18,8 @@ module.exports.circlePerimeter = function (circleObj, exceptedResult) {
 	describe('Формулы круга', function () {
 		describe('Периметр', function () {
 			it(`Должно вернуть ${exceptedResult}, радиус = ${circleObj.radius}`, function () {
-				let result = operations.getPerimeter(circleObj.radius);
+				let result = circleObj.getPerimeter(circleObj.radius);
+				
 				assert.equal(result, exceptedResult);
 			})
 		});

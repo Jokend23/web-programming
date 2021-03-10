@@ -1,15 +1,15 @@
 const assert = require('assert');
-const operations = require('../operations/trapezoid_operations.js');
+// const operations = require('../operations/trapezoid_operations.js');
 
 
 module.exports.middleLine = function (trapezoidObj, exceptedResult) {
-	let top = trapezoidObj.sides['top'];
-	let bottom = trapezoidObj.sides['bottom'];
+	let top = trapezoidObj.top;
+	let bottom = trapezoidObj.bottom;
 
 	describe('Формулы цилиндра', function () {
 		describe('Площадь боковой поверности', function () {
 			it(`Должно вернуть ${exceptedResult}, top = ${top}, bottom = ${bottom}`, function () {
-				let result = operations.getMiddleLine(top, bottom);
+				let result = trapezoidObj.getMiddleLine(top, bottom);
 
 				assert.equal(result, exceptedResult);
 			})
@@ -18,15 +18,15 @@ module.exports.middleLine = function (trapezoidObj, exceptedResult) {
 };
 
 module.exports.perimeter = function (trapezoidObj, exceptedResult) {
-	let top = trapezoidObj.sides['top'];
-	let right = trapezoidObj.sides['right'];
-	let bottom = trapezoidObj.sides['bottom'];
-	let left = trapezoidObj.sides['left'];
+	let top = trapezoidObj.top;
+	let right = trapezoidObj.right;
+	let bottom = trapezoidObj.bottom;
+	let left = trapezoidObj.left;
 
 	describe('Формулы цилиндра', function () {
 		describe('Площадь боковой поверности', function () {
 			it(`Должно вернуть ${exceptedResult}, top = ${top}, right = ${right}, bottom = ${bottom}, left = ${left}`, function () {
-				let result = operations.getPerimeter(top, right, bottom, left);
+				let result = trapezoidObj.getPerimeter(top, right, bottom, left);
 
 				assert.equal(result, exceptedResult);
 			})

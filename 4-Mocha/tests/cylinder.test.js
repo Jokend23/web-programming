@@ -1,5 +1,5 @@
 const assert = require('assert');
-const operations = require('../operations/cylinder_operations.js');
+// const operations = require('../operations/cylinder_operations.js');
 
 
 module.exports.lateralSurfaceArea = function (cylinderObj, exceptedResult) {
@@ -9,7 +9,7 @@ module.exports.lateralSurfaceArea = function (cylinderObj, exceptedResult) {
 	describe('Формулы цилиндра', function () {
 		describe('Площадь боковой поверности', function () {
 			it(`Должно вернуть ${exceptedResult}, радиус = ${radius}, высота = ${height}`, function () {
-				let result = operations.getLateralSurfaceArea(radius, height);
+				let result = cylinderObj.getLateralSurfaceArea(radius, height);
 
 				assert.equal(result, exceptedResult);
 			})
@@ -24,7 +24,7 @@ module.exports.fullArea = function (cylinderObj, exceptedResult) {
 	describe('Формулы цилиндра', function () {
 		describe('Площадь всей поверности', function () {
 			it(`Должно вернуть ${exceptedResult}, радиус = ${radius}, высота = ${height}`, function () {
-				let result = operations.getFullArea(radius, height);
+				let result = cylinderObj.getFullArea(radius, height);
 
 				assert.equal(result, exceptedResult);
 			})
