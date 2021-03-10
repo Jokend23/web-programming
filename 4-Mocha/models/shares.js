@@ -24,7 +24,7 @@ module.exports.Trapezoid =function (top, right, bottom, left) {
 	this.left = left;
 
 	this.getPerimeter = function (top, right, bottom, left) {
-    	return top + right + bottom + left;
+		return top + right + bottom + left;
 	};
 
 	this.getMiddleLine = function (top, bottom) {

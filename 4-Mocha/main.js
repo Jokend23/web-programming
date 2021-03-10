@@ -6,9 +6,9 @@ const shares = require('./models/shares.js');
 
 
 // Запуск тестов для площади круга
-let cirlecSquareTests  = circleTests.stdin['squareTests'];
-for (let i in cirlecSquareTests) {
-	let test = cirlecSquareTests[i];
+let circleSquareTests  = circleTests.stdin['squareTests'];
+for (let i in circleSquareTests) {
+	let test = circleSquareTests[i];
 		let exceptedResult = test['exceptedResult'];
 	let circle = new shares.Circle(test['value']);
 
@@ -16,9 +16,9 @@ for (let i in cirlecSquareTests) {
 }
 
 // Запуск тестов для периметра круга
-let cirlecPerimeterTests  = circleTests.stdin['perimeterTests'];
-for (let i in cirlecPerimeterTests) {
-	let test = cirlecPerimeterTests[i];
+let circleSquareTests  = circleTests.stdin['perimeterTests'];
+for (let i in circleSquareTests) {
+	let test = circleSquareTests[i];
 	let exceptedResult = test['exceptedResult'];
 	let circle = new shares.Circle(test['value']);
 
