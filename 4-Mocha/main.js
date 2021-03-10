@@ -16,9 +16,9 @@ for (let i in circleSquareTests) {
 }
 
 // Запуск тестов для периметра круга
-let circleSquareTests  = circleTests.stdin['perimeterTests'];
-for (let i in circleSquareTests) {
-	let test = circleSquareTests[i];
+let circlePerimeterTests  = circleTests.stdin['perimeterTests'];
+for (let i in circlePerimeterTests) {
+	let test = circlePerimeterTests[i];
 	let exceptedResult = test['exceptedResult'];
 	let circle = new shares.Circle(test['value']);
 
