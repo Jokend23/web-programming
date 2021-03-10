@@ -1,0 +1,24 @@
+{
+  "name": "charesmochatest",
+  "version": "1.0.0",
+  "description": "Simple test for geometric shares",
+  "main": "main.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha main.js"
+  },
+  "keywords": [
+    "mocha",
+    "shares",
+    "mocha.js"
+  ],
+  "author": "Andrey Korobko <0jokend0@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "commander": "^7.1.0",
+    "mathjs": "^9.2.0",
+    "mocha": "^8.3.1"
+  }
+}
